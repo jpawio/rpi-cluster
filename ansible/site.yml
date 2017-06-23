@@ -1,0 +1,6 @@
+- hosts: kubernetes
+  vars:
+  remote_user: root
+  roles: 
+     - common      
+  tasks:
