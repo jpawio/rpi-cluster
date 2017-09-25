@@ -1,6 +1,12 @@
 - hosts: kubernetes
   vars:
   remote_user: root
+  strategy: free
   roles: 
-     - common      
+     - common
+     - kubernetes      
+     - docker
+  gather_facts: False
+  pre_tasks:
+     - raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
   tasks:
