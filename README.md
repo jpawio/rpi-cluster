@@ -10,7 +10,7 @@
 - setup pachyderm
 
 ## example cluster
-### xomponents
+### components
 - 4 x Raspberry Pi 2 B
 - 1 x DC supply 5V 4A (mini usb out)
 - 1 x 5 ports switch
